@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="imagethread.ImageFXMLController">
+   <children>
+      <MenuBar AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Archivo">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Salir" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Opciones">
+            <items>
+                <Menu mnemonicParsing="false" text="Elegir árbol">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#setOption" text="BinarySearchTree" />
+                        <MenuItem mnemonicParsing="false" onAction="#setOption" text="BinaryTreeAVL" />
+                  </items>
+                </Menu>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <StackPane layoutX="81.0" layoutY="36.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="434.0" fitWidth="478.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Files/avl.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
