@@ -1,0 +1,4 @@
+/dist/
+/build/
+build/classes/imagethread/ImageFXMLController$Updater.class
+*.class
